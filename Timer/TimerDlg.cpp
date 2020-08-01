@@ -146,9 +146,7 @@ void CTimerDlg::OnTimer(UINT_PTR nIDEvent)
 
 			CString CurrentTimeString(L"Время закончилось");
 
-			CurrentTime.SetWindowTextW(CurrentTimeString);
-
-			CurrentTime.OnPaint();
+			CurrentTime.SetWindowTextW(CurrentTimeString, Big);
 
 			Stop = true;
 		}
@@ -166,7 +164,7 @@ void CTimerDlg::OnTimer(UINT_PTR nIDEvent)
 
 				CurrentTimeString.Format(CString(L"Дни: %d Часы: %d Минуты: %d Секунды: %d"), EventTime.GetDays(), EventTime.GetHours(), EventTime.GetMinutes(), EventTime.GetSeconds());
 
-				CurrentTime.SetWindowTextW(CurrentTimeString);
+				CurrentTime.SetWindowTextW(CurrentTimeString, Little);
 			}
 		}
 

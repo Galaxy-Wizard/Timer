@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "CEditExtended.h"
+#include "CStaticExtended.h"
 
 // Диалоговое окно CTimerDlg
 class CTimerDlg : public CDialogEx
@@ -38,7 +38,7 @@ public:
 	CTimeSpan EventTime;
 	CTimeSpan StartingEventTime;
 	CEdit InitialTime;
-	CEditExtended CurrentTime;
+	CStaticExtended CurrentTime;
 	bool Stop;
 	COLORREF CurrentColor;
 	CCriticalSection StopCriticalSection;
